@@ -1,0 +1,255 @@
+/******************************************/
+.footer_wrap{margin:0;}
+/******************************************/
+/*注册成功弹窗样式*/
+#epopup_wrap,#mpopup_wrap{
+	background-color:#fff;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 20000;
+	display:none;
+	width:100%;
+	height:100%;
+opacity: 0.6;
+filter: alpha(opacity=60);
+}
+#epopup,#mpopup{
+	background-color:#f1f1f1;
+	border:solid 1px #ccc;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 20020;
+	display:none;
+	width:300px;
+	height:100px;
+	text-align: center;
+	padding:15px;
+	font-size:16px;
+}
+
+
+
+/**************新用户注册内容块样式开始****************/
+
+.register_content{
+	width:1201px;
+	height:558px;
+	margin:0 auto;
+	padding:0 158px 0 148px;
+}
+/*左边注册信息*/
+.register_infor{
+	height:100%;
+	width:420px;
+}
+.register_infor input{
+	border:0;
+	border:1px solid #888;
+}
+.register_title{
+	height:84px;
+	padding:44px 0 0;
+}
+.register_title h5{
+	color:#333;
+	padding:0 5px 0 0;
+	border-right:1px solid #ADADAD;
+}
+.register_title h5,.register_title p{
+	margin:0;
+	padding:0 5px;
+}
+.register_title a:hover{
+	color:#ff0000;
+}
+.twoway{
+	margin:0;
+	font-size:12px;
+}
+.email,.mobile{
+	float:left;
+	cursor: pointer;
+	text-align: center;
+	width:135px;
+	height: 35px;
+	background: url(../images/register_img/email_b1.jpg) no-repeat center;
+	color:#888;
+	line-height: 34px;
+	margin:5px 30px 18px 0;
+}
+.e_m_active{
+	color:#992942;
+	background: url(../images/register_img/email_b2.jpg) no-repeat center;
+}
+
+.email span{
+	width:34px;
+	height:34px;
+	float:left;
+	background:url("../images/register_img/email_t1.png") no-repeat center;
+}
+.mobile span{
+	width:34px;
+	height:34px;
+	float:left;
+	background:url("../images/register_img/phone_t1.png") no-repeat center;
+}
+
+.mobile_way form{
+	display: none;
+}
+
+.email_way p,.mobile_way p{
+	margin:0;
+}
+.email_way .email_inp,.email_way .epwd_inp1,.email_way .epwd_inp2,.mobile_way .mobile_code_inp,.mobile_way .mpwd_inp1,.mobile_way .mpwd_inp2{
+	width:245px;
+	height:35px;
+	margin:8px 0 0;
+	padding:0 0 0 10px;
+}
+.email_way .strength span,.mobile_way .strength span{
+	float:left;
+	height:50px;
+	line-height: 54px;
+	width:80px;
+	text-align: center;
+	border-bottom:6px solid #b2b2b2;
+}
+.email_way .strength .red_acti_span,.mobile_way .strength .red_acti_span{
+	border-bottom:6px solid #cd3333;
+}
+.email_way .checkbox input,.mobile_way .checkbox input{
+	display: inline-block;
+} 
+.email_way .checkbox,.mobile_way .checkbox{
+	margin:24px 0 14px;
+	padding:0 0 0 18px;
+} 
+.mobi_form div span,.emai_form div span,.mobi_form .inp span,.emai_form .inp span{
+	float: right;
+	height:35px;
+	margin: 11px 0 0 5px;
+	color:#ff0000;
+	width:150px;
+}
+p .email_btn,p .mobile_btn{
+	display: block;
+	width:140px;
+	height:36px;
+	border:0;
+	background: url("../images/register_img/reg_btn.jpg") no-repeat center;
+	text-indent: -9999px;
+}
+.mobile_way .mobile_p{
+	margin:10px 0;
+	width:248px;
+	height:35px;
+	border:1px solid #888;
+}
+.mobile_way .mobile_inp{
+	width:168px;
+	height:33px;
+	float:left;
+	border:0;
+	border:1px solid #fff;
+	padding:0 0 0 10px;
+}
+.mobile_way .mobile_p button{
+	width:75px;
+	height:28px;
+	float:left;
+	color:#fff;
+	border:0;
+	margin:2px 0;
+	background:#972a41;
+}
+.mobile_way .code_inp{
+	padding:0 0 0 10px;
+	width:76px;
+	float:left;
+	height:35px;
+}
+.mobile_way .code_p b{
+	float:left;
+	width:82px;
+	height:24px;
+	text-align: center;
+	line-height: 22px;
+	margin:6px;
+	border:1px solid #888;
+}
+.mobile_way .code_p a{
+	line-height: 35px;
+	cursor: pointer;
+}
+.mobile_way .code_p a:hover{
+	color:#666;
+	text-decoration: none;
+}
+/*右边须知协议*/
+.register_agree{
+	width:456px;
+	height:100%
+}
+.agree_scroll{
+	width:453px;
+	height:140px;
+	border:1px solid #DADADA;
+	resize: none;
+	margin:100px 0 0;
+}
+.member_notice{
+	margin:14px 0 0;
+	color:#000;
+}
+.member_notice h6{
+	margin:23px 0;
+	font-weight:bold;
+}
+.member_notice p{
+	line-height: 22px;
+	margin:0;
+}
+/**************新用户注册内容块样式结束****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

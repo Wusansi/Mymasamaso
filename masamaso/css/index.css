@@ -1,0 +1,526 @@
+/*********大广告轮播样式开始***********/
+.big_banner{
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.banner_box{
+  width: 100%;
+  height: 500px;
+}
+.banner_box li{
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner_box a{
+  display: block;
+  height: 500px;
+}
+.banner_box .img1{
+  z-index: 3;
+  background: url("../images/index_img/bunzD3kdrogDXm173554.jpg") no-repeat center;
+}
+.banner_box .img2{
+  z-index: 2;
+  background: url("../images/index_img/rRaBoeYZscexwN175054.jpg") no-repeat center;
+}
+.banner_box .img3{
+  z-index: 1;
+   background: url("../images/index_img/vfRtnpTL6hLgIp170339.jpg") no-repeat center;
+}
+.banner_btn{
+  position: absolute;
+  left: 32%;
+  bottom: 16px;
+  z-index: 4;
+}
+.banner_btn li{
+  float: left;
+   z-index: 4;
+  margin: 0 14px 0 0;
+}
+.banner_btn .red_border{
+  border: 1px solid #a82127;
+}
+.banner_btn img{
+  border: 1px solid #fff;
+  width: 144px;
+  display: block;
+  cursor: pointer;
+}
+/*********大广告轮播样式结束***********/
+
+/*********最新公告轮播样式开始***********/
+.notice{
+  width:1201px;
+  height: 30px;
+  font-size: 13px;
+  margin: 22px auto 0;
+  background-color: #f2f2f2;
+}
+.notice *{
+  display: inline-block;
+}
+.notice span{
+  float: left;
+  padding: 0 0 0 34px;
+  line-height: 30px;
+}
+.notice_right{
+  width: 1050px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 0 0 30px;
+  overflow: hidden;
+  position: relative;
+}
+.notice_rbox{
+  height: 30px;
+  width: 700%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.notice_rbox a{
+  float: left;
+  margin: 0 33px;
+}
+.notice_rbox a:hover{
+  text-decoration: none;
+  color: #666;
+}
+.notice_rbox .fontRed:hover{
+  color:#ff0000 ;
+}
+/*********最新公告轮播样式结束***********/
+
+
+/*********时尚风标样式开始**********/
+.fashion_title{
+  width:1201px;
+  height: 80px;
+  margin: 0 auto;
+}
+.fashion_title p{
+  float: left;
+  margin: 0;
+}
+.border_bot{
+  width: 530px;
+  height: 45px;
+  border-bottom: 1px solid #ccc;
+}
+.fa_title{
+  width: 140px;
+  height: 80px;
+  line-height: 94px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.fashion_accordion{
+  width:1201px;
+  height: 465px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.fashion_box{
+  float: left;
+  width: 140px;
+  height: 465px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.fashion_box .pic{
+  height: 190px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+.fashion_box .pic img{
+  display: block;
+}
+.fashion_box .text{
+  padding: 0 14px;
+  width: 140px;
+  height: 275px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.fashion_box .text .title{
+  height: 50px;
+  font-size: 20px;
+  color: #333;
+  line-height: 70px;
+}
+.fashion_box .text .content{
+  font-size: 13px;
+  line-height: 22px;
+}
+.fashion_box .text .link{
+  position: absolute;
+  bottom: 20px;
+  width: 112px;
+  margin: 0;
+}
+.fashion_box .text .link a{
+  color: #000;
+  font-size: 13px;
+  
+}
+.fashion_box .text .link a:hover{
+  text-decoration: none;
+}
+.opened{
+  width: 780px;
+  height: 465px;
+  overflow: hidden;
+  position: relative;
+}
+.opened .opacity_text{
+  width:380px;
+  height:180px;
+  background: #dadada;
+  opacity: 0.8;
+  filter: alpha(opacity=80 );
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+.opened .opacity_text .link{
+  width:352px;
+}
+/*********时尚风标样式结束***********/
+
+
+/* **************热销推荐轮播样式开始************** */
+.hot_title{
+  width:1201px;
+  height: 80px;
+  margin: 0 auto;
+}
+.hot_title p{
+  float: left;
+  margin: 0;
+}
+.hot_title .border_bot{
+  width: 550px;
+}
+.h_title{
+  width: 100px;
+  height: 80px;
+  line-height: 94px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.slider_nav{
+  width:1201px;
+  height: 36px;
+  margin: 0 auto;
+  padding: 0 0 0 360px;
+  line-height: 36px;
+}
+.slider_nav span{
+  float: left;
+  cursor:pointer;
+  font-size: 13px;
+  margin: 0 15px;
+}
+.slider_nav .active_b_a{
+	color:#000;
+	font-weight:bold;
+}
+.hot_scroll{
+  width:1201px;
+  height: 804px;
+  overflow:hidden;
+  margin: 0 auto;
+}
+
+.hot_scroll li{
+  float: left;
+  width:1201px;
+  height: 768px;
+}
+.hot_scroll li dl{
+  float: left;
+  width: 232px;
+  height: 384px;
+  padding: 0;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+.hot_scroll li dt img{
+  display: block;
+}
+.hot_scroll li dd{
+  height: 60px;
+  padding: 12px 0 0;
+  line-height: 22px;
+}
+.hot_scroll li dd p{
+  display: block;
+  width: 220px;
+  padding: 0 0 0 12px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hot_scroll li dd p a:hover{
+  text-decoration: none;
+  color: #333;
+}
+.hot_scroll li dd span{
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+}
+
+/* **************热销推荐轮播样式结束************** */
+
+
+
+/**********活动主题篇样式开始***********/
+.theme_title{
+  width:1201px;
+  height: 70px;
+  margin: 0 auto;
+}
+.theme_title p{
+  float: left;
+  margin: 0;
+  padding:0;
+}
+.theme_title .border_bot{
+  width: 540px;
+  height:34px;
+}
+.the_title{
+  width: 120px;
+  height: 70px;
+  line-height: 68px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.activity_theme{
+  width:1201px;
+  height: 794px;
+  margin: 0 auto;
+}
+.activity_theme li{
+  float:left;
+  width:386px;
+  height:386px;
+  overflow:hidden;
+  position:relative;
+  margin:0 20px 20px 0;
+}
+.activity_theme li img{
+  display:block;
+  width:100%;
+  margin:auto;
+  height:100%;
+}
+.activity_theme .w794{
+  width:794px;
+}
+.activity_theme .marR0{
+  margin-right:0;
+}
+.activity_theme .marT0{
+  margin-top:0;
+}
+.activity_theme li div{
+  width:230px;
+  height:70px;
+  font-size:13px;
+  padding:16px 0 0;
+  text-align:center;
+  background:#fff;
+  opacity:0.8;
+  filter:alpha(opacity=80);
+  position:absolute;
+  right:0;
+  bottom:30px;
+}
+.activity_theme li h4{
+  color:#000;
+}
+/**********活动主题篇样式结束***********/
+
+
+/**********经典专区样式开始***********/
+.classics_title{
+  width:1201px;
+  padding:18px 0 0;
+  height: 80px;
+  margin: 0 auto;
+}
+.classics_title p{
+  float: left;
+  margin: 0;
+  padding:0;
+}
+.classics_title .border_bot{
+  width: 550px;
+  height:35px;
+}
+.cla_title{
+  width: 100px;
+  height: 35px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.classics_part{
+  width:1201px;
+  height: 794px;
+  margin: 0 auto;
+}
+.classics_part li{
+  float:left;
+  width:386px;
+  height:386px;
+  overflow:hidden;
+  position:relative;
+  margin:0 20px 20px 0;
+}
+.classics_part li img{
+  display:block;
+  width:100%;
+  margin:auto;
+  height:100%;
+}
+.classics_part .w793{
+  width:793px;
+}
+.classics_part .marR0{
+  margin-right:0;
+}
+.classics_part .marT0{
+  margin-top:0;
+}
+.classics_part li div{
+  width:230px;
+  height:70px;
+  font-size:13px;
+  padding:16px 0 0;
+  text-align:center;
+  background:#fff;
+  opacity:0.8;
+  filter:alpha(opacity=80);
+  position:absolute;
+  right:0;
+  bottom:30px;
+}
+.classics_part li h4{
+  color:#000;
+}
+/**********经典专区样式结束***********/
+
+/**********时尚资讯样式开始***********/
+.message_title{
+  width:1201px;
+  padding:18px 0 0;
+  height: 80px;
+  margin: 0 auto;
+}
+.message_title p{
+  float: left;
+  margin: 0;
+  padding:0;
+}
+.message_title .border_bot{
+  width: 550px;
+  height:35px;
+}
+.mes_title{
+  width: 100px;
+  height: 35px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.message_part{
+  width:1201px;
+  height: 685px;
+  margin: 0 auto;
+}
+.message_part h4{
+  margin:30px 0 24px 12px;
+}
+.message_part p{
+  line-height:22px;
+  width:424px;
+  padding:0 0 0 12px;
+}
+.message_part li b{
+  position:absolute;
+  left:12px;
+  bottom:50px;
+  font-weight:normal;
+}
+.message_part li a:hover{
+  color:#333;
+}
+.message_part li{
+  float:left;
+  width:495px;
+  height:685px;
+  position:relative;
+  margin:0 20px 0 0;
+}
+.message_part li div{
+  height:300px;
+}
+.message_part li div img,.message_part .w162 img{
+  width:100%;
+  display:block;
+}
+.message_part .w162{
+  float:right;
+  width:162px;
+  height:641px;
+  margin:0;
+}
+/**********活动主题篇样式结束***********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

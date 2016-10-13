@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>李炎阳</title>
+	<!--<title>【马萨玛索时尚男装】男士衣服服装搭配_休闲名牌服装品牌_男装品牌大全排名_中国服装网购商城</title>-->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/shoppingcart.css">
+	<script src="../js/jquery_1.11.3.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	 <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+	
+</head>
+<body>
+	<!--购物车顶部logo图片-->
+	<div class="cart_header_logo">
+		<a href="##"><img src="../images/shoppingCart_img/masamaso_logo.jpg"/></a>
+	</div>
+    <!--购物车导航-->
+    <div id="lead">
+	    <dl class="bc_nav">
+	      <dt>结算步骤:</dt>
+	      <dd><strong class="cur">我的购物车</strong><span>&gt;&gt;</span></dd>
+	      <dd><strong>结算中心</strong><span>&gt;&gt;</span></dd>
+	      <dd><strong>订单完成</strong></dd>
+	    </dl>
+  	</div>
+  	<!--我的购物车-->
+  	<div id="container" class="clearfix">
+  		<!--购物车里没加入任何商品时-->
+  		<div id="noAdd" class="clearfix">
+		    <h2 class="title">我的购物车</h2>
+		    <div class="login_tips login_tips2">
+		      <p><strong>您目前购物车内尚未加入任何商品，现在就开始购物吧。</strong></p>
+		      <dl>
+		        <dt>现在，您还可以：</dt>
+		        <dd><a href="##">去新装发布</a></dd>
+		        <dd><a href="##">去团购</a></dd>
+		        <dd><a href="##">去特价区</a></dd>       
+		        <dd><a href="../index.html">回到网站首页</a></dd>
+		        <dd><a href="##">查看订单</a></dd>
+		        <dd><a href="##">反馈意见</a></dd>
+		      </dl>
+		    </div>
+	    </div>
+    	<!--购物车里有所加入的商品-->
+    	<div id="bcAdd_wrap" class="clearfix">
+	    	<div id="bcAdd">
+	    		<h2 class="title gou_iocn">我的购物车</h2>
+	    		<div class="tips " id="tishi">
+			      <p class="left"><em>温馨提示：</em>目前购物尚未完成，请您尽快完成订单提交，以便我们为您确认库存状态，并及时配送。</p>
+			      <a title="关闭" id="close" class="btn_over">关闭</a> 
+	    		</div>
+	    		<div class="shopping_box">
+			      <table summary="我的购物车">
+			        <caption class="blank">
+			        我的购物车
+			        </caption>
+			        <colgroup>
+			        <col width="67">
+			        <col width="350">
+			        <col width="77">
+			        <col width="77">
+			        <col width="82">
+			        <col width="142">
+			        <col width="82">
+			        <col>
+			        </colgroup>
+			        <thead>
+			          <tr>
+			            <th>款号</th>
+			            <th>商品</th>
+			            <th>尺寸</th>
+			            <th>原价</th>
+			            <th>现价</th>
+			            <th>数量</th>
+			            <th>小计</th>
+			            <th>操作</th>
+			          </tr>
+			        </thead>
+			        <tbody id="addGoods">
+			          <!--普通商品-->
+		                <!--<tr>
+				          <td><a href="##">0101</a></td>
+				          <td class="pro">
+							  <div class="poreat">
+								  <a class="proa" href="##"><img src="../images/shoppingCart_img/20590_stg_1.jpg" /></a>
+								  <div class="poreImg"><img src="../images/shoppingCart_img/20590_sts_1.jpg"></div>
+							  </div>
+				            	<p> <a href="##"><span>时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</span></a> </p>
+				          </td>
+				          <td>S</td>
+				          <td>¥1699</td>
+				          <td>¥399</td>
+				          <td>
+				          	<div class="addnum">
+				              <span class="button btn_cut_cart_product_num"> <img src="../images/shoppingCart_img/btn_minus.gif"/> </span>
+				              <input type="" readonly="readonly" class="num" value="1">
+				              <span class="button btn_add_cart_product_num"> <img src="../images/shoppingCart_img/btn_plus.gif" alt=""> </span>
+				            </div>
+						  </td>
+				          <td>¥399</td>
+				          <td><a href="##" class="delete btn_delete">删除</a></td>
+				        </tr>-->
+					</tbody>		        
+			      </table>
+			    </div>
+	    	</div>
+	    	<!--结算-->
+	    	<table summary="购物结算" class="shopping_total">
+		      <caption class="blank">
+		      购物结算
+		      </caption>
+		      <colgroup>
+		      <col width="200">
+		      <col width="280">
+		      <col>
+		      <col>
+		      </colgroup>
+		      <tbody>
+		        <tr>
+		          <td><a href="javascript:;" id="btn_clear_cart_product_info">清空购物车</a>&nbsp;&nbsp;<a href="javascript:;" id="btn_delete_cart_product_info">点击查看刚删除商品</a></td>
+		          <td class="tips">实际支付金额满<span>￥200.00</span>免运费</td>
+		          <td><p>优惠券折扣：<span>¥0</span></p>
+		            <p>积分折扣：<em>¥0</em></p></td>
+		          <td><p>商品原价：<span>¥1699</span></p>
+		            <p>优惠金额：<em>¥1300</em></p></td>
+		          <td><p>运费：<span>0</span></p>
+		            <p class="totalPrice"><!--商品总金额：<em class="end">¥399</em>--></p></td>
+		        </tr>
+		      </tbody>
+		    </table>
+		    <div class="order_tips">    
+	      		<p class="borBill">购物车内有预订商品，为了不影响现货正常发货，请您将预订商品单独下单并尽快完成线上支付。</p>    
+		    </div>
+		    <!--付款结算-->
+		    <div class="pay_box">       
+		    	<div> 
+		    		<a href="../index.html"><img src="../images/shoppingCart_img/jx_gou.jpg"  alt=""/></a> 
+	          		<a id="pay_btn" href="javascript:;"><img src="../images/shoppingCart_img/btn_settlement.jpg" alt=""/></a> 
+		    	</div>
+		    	<div id="pay_popupwrap"></div>
+		    	<div id="pay_popup">
+		    		<table>
+		    			<thead>
+				          <tr>
+				            <th>款号</th>
+				            <th>商品</th>
+				            <th>尺寸</th>				        
+				            <th>单价</th>
+				            <th>数量</th>
+				            <th>小计</th>
+				          </tr>
+				        </thead>
+				        <tbody></tbody>				        
+		    		</table>
+		    		<p class="pay_alltotal">总价为:<span class=" fontRed"></span>元</p>
+		    		<div class="pay_btn2">
+			    		<button class="alipay_btn">支付宝支付</button>
+			    		<button class="weixinpay_btn">微信支付</button>
+			    		<button class="pay_cancel">取消</button>
+		    		</div>
+		    	</div>
+	    	</div>
+	    	<!--订单换购-->
+	    	<div class="clearfix">
+		    	<div class="section_ttl">
+		    		<a href="##" class="close_btn">收/展</a><h3>订单换购</h3>
+		    	</div>
+		  	</div>
+		  		<div class="orderchange clearfix">
+		  			<img src="../images/shoppingCart_img/orderchange.jpg" alt="" />
+		  		</div>
+	  		</div>
+  	</div>
+    <!--脚部-->
+    <div class="bc_footer">
+  		<p>
+  		Copyright © 2008-2050 MasaMaso.com All Right Reserved 京ICP证080088号
+  		</p>
+	</div>
+    <!--<script src="../js/common.js"></script>-->
+	<script src="../js/shoppingcart.js"></script>
+</body>
+</html>

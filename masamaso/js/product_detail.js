@@ -50,7 +50,8 @@ $(function(){
 
 		//加入购物车
 		if($.cookie("cart")){
-			var obj = JSON.parse($.cookie("cart"))
+//			var obj = JSON.parse($.cookie("cart"))
+			var obj = JSON.parse(localStorage.getItem("cart"))
 		}else{
 			var obj = {};
 		}
@@ -61,8 +62,10 @@ $(function(){
 			num+=$("#product_num").val()-1;
 			obj[pid] = ++num;
 			var objTostr = JSON.stringify(obj);
-			$.cookie("cart",objTostr);
-			var cookieObj = JSON.parse($.cookie("cart"));
+//			$.cookie("cart",objTostr);
+			localStorage.setItem("cart",objTostr);
+//			var cookieObj = JSON.parse($.cookie("cart"));
+			var cookieObj = JSON.parse(localStorage.getItem("cart"));
 			console.log(cookieObj);
 			window.location="shoppingcart.html";
 		})

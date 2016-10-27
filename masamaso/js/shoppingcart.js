@@ -1,8 +1,10 @@
 $(function(){
 	$.get("../js/hotProduct.json",function(data){
 //		var pid=window.location.search.replace(/\?/,"");
-		console.log($.cookie().cart);		
-		var cookieObj = JSON.parse($.cookie("cart"));
+//		console.log($.cookie().cart);	
+		console.log(localStorage.getItem("cart"));
+//		var cookieObj = JSON.parse($.cookie("cart"));
+		var cookieObj = JSON.parse(localStorage.getItem("cart"));
 		var str1="";
 		var str2="";
 		var str3="";
@@ -19,7 +21,8 @@ $(function(){
 
 		//如果购物车里没有加入商品
 		function ifAdd(){
-			if($.cookie("cart")=="{}"){
+//			if($.cookie("cart")=="{}"){
+			if(localStorage.getItem("cart")=="{}"){
 	//			alert(0)
 				$("#noAdd").show();
 				$("#bcAdd_wrap").hide();
@@ -58,8 +61,10 @@ $(function(){
 				cookieObj[$(this).parent().parent("td").siblings(".pid").find("a").html()]=$(this).siblings("input.num").val();
 				
 				var objTostr = JSON.stringify(cookieObj);
-				$.cookie("cart",objTostr);
-				console.log($.cookie().cart);
+//				$.cookie("cart",objTostr);
+				localStorage.setItem("cart",objTostr);
+//				console.log($.cookie().cart);
+				console.log(localStorage.getItem("cart"));
 				allPrice();
 				popup_paynum();	
 			})
@@ -79,8 +84,10 @@ $(function(){
 				//商品数量加减时存cookie
 				cookieObj[$(this).parent().parent("td").siblings(".pid").find("a").html()]=$(this).siblings("input.num").val();
 				var objTostr = JSON.stringify(cookieObj);
-				$.cookie("cart",objTostr);
-				console.log($.cookie().cart);
+//				$.cookie("cart",objTostr);
+				localStorage.setItem("cart",objTostr);
+//				console.log($.cookie().cart);
+				console.log(localStorage.getItem("cart"));
 				allPrice();
 				popup_paynum();	
 			})
@@ -108,8 +115,10 @@ $(function(){
 				$(this).parent().parent().remove();
 				console.log(cookieObj);
 				var objTostr = JSON.stringify(cookieObj);
-				$.cookie("cart",objTostr);
-				console.log($.cookie().cart);
+//				$.cookie("cart",objTostr);
+//				console.log($.cookie().cart);
+				localStorage.setItem("cart",objTostr);
+				console.log(localStorage.getItem("cart"));
 				ifAdd();
 				allPrice();
 			})
@@ -157,12 +166,15 @@ $(function(){
 //				$(this).remove();
 				console.log(cookieObj);
 				var objTostr = JSON.stringify(cookieObj);
-				$.cookie("cart",objTostr);
-				console.log($.cookie().cart);
+//				$.cookie("cart",objTostr);
+//				console.log($.cookie().cart);
+				localStorage.setItem("cart",objTostr);
+				console.log(localStorage.getItem("cart"));
 				ifAdd();
 			})
 			$("#addGoods").find("tr").remove();
-			console.log($.cookie("cart"))
+//			console.log($.cookie("cart"))
+			console.log(localStorage.getItem("cart"))
 		})
 		//订单换购的收展功能
 		$(".close_btn").click(function(){

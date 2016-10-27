@@ -1,15 +1,18 @@
 $(function(){
 	//当用户登录时，在页面头部显示用户名等，点击退出跳到首页
-	var str=$.cookie().account_inp;
+//	var str=$.cookie().account_inp;
+var str=localStorage.getItem("account_inp");
 	if(str){
 		$("ul.head_top_right").html("<li>欢迎<a class='fontRed' href='##'>"+str+"</a>！</li><li><a href='##'>我的相关信息</a></li><li class='borR0'><a id='exit' href='javascript:;'>退出</a></li>");
 	}	
 	$("#exit").click(function(){
-		$.removeCookie("account_inp",{path:"/"});
+//		$.removeCookie("account_inp",{path:"/"});
+		localStorage.removeItem("account_inp");
 		$("ul.head_top_right").html("<li><a href='html/login.html'>用户登录</a></li><li class='borR0'><a href='html/register.html'>新用户注册</a></li>");
 	})
 	
-	console.log($.cookie().cart)
+//	console.log($.cookie().cart)
+	console.log(localStorage.getItem("cart"))
 })
 $(function() {
 	// 大广告轮播 
